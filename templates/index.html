@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Гость</title>
+
+  </head>
+  <body>
+      
+     <center>
+      <div id="countdown">
+  <h1>Ожидайте <span class="display">900</span> секунд</h1>
+  <button style="display: none;">Bang!</button>
+</div>
+         </center>
+      
+      
+      <script>
+      (function(d){
+  var display = d.querySelector('#countdown .display') // меняющаяся цифра
+	var timeLeft = parseInt(display.innerHTML) // оставшееся время
+  
+  var timer = setInterval(function(){
+    if (--timeLeft >= 0) { // если таймер всё еще больше нуля
+    	display.innerHTML = timeLeft // обновляем цифру
+    } else {
+    	d.querySelector('#countdown h1').style.display = 'none' // прячем теекст
+      d.querySelector('#countdown button').style.display = 'block' // показываем кнопку
+      clearInterval(timer) // удаляем таймер
+    }
+  }, 1000)  // таймер срабатывает каждые 1000 msec (1 sec)
+})(document)
+      
+      </script>
+      
+      
+      
+      <div class="container" style="margin-top: 50px;">
+
+<div class="row">
+
+    <div class="col">
+    <iframe src="banner.html" width="540" height="480" align="left">
+    Ваш браузер не поддерживает плавающе фреймы!
+ </iframe>
+    </div>
+<div class="col">
+    <iframe src="banner.html" width="540" height="480" align="left">
+    Ваш браузер не поддерживает плавающие фреймы!
+ </iframe>
+    </div>
+
+
+
+</div>
+</div>
+      <br>
+      <div class="container">
+      <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+     <center> <img src="https://i.imgur.com/5SeRKvq.png" class="btn btn-light" style="border: solid 1px black; border-radius: 20px;" id="btnup"></center>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col">
+                </div>
+    <div class="col">
+      <center><img src="https://i.imgur.com/e0MmO1g.png" class="btn btn-light" style="border: solid 1px black; border-radius: 20px; text-align: right" id="btnleft"></center>
+    </div>
+    <div class="col">
+     <center> <img src="https://i.imgur.com/jNjBjuD.png" class="btn btn-light" style="border: solid 1px black; border-radius: 20px;" id = "btndown"></center>
+    </div>
+    <div class="col">
+      <center> <img src="https://i.imgur.com/mB0eUGy.png" class="btn btn-light" style="border: solid 1px black; border-radius: 20px;" id="btnright"></center>
+    </div>
+                <div class="col">
+                </div>
+  </div>
+
+
+      </div>
+
+      
+
+
+
+       <script>
+
+let up = document.querySelector('#btnup');
+let left = document.querySelector('#btnleft');
+let down = document.querySelector('#btndown');
+let right = document.querySelector('#btnright');
+           function gowhite(){
+               up.style.backgroundColor = "white";
+               left.style.backgroundColor = "white";
+               down.style.backgroundColor = "white";
+               right.style.backgroundColor = "white";
+           }
+
+document.onkeydown = checkKey;
+
+function goleft(){
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+function goleft_fast(){
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+[Photo]
+var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+
+}
+
+function backleft(){
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+
+function goright(){
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+
+function goright_fast(){
+
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+function backright(){
+
+var x = new XMLHttpRequest();
+x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+x.onload = function (){
+
+}
+x.send(null);
+
+    var x = new XMLHttpRequest();
+x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+x.onload = function (){
+
+}
+x.send(null);
+
+    var x = new XMLHttpRequest();
+x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+x.onload = function (){
+
+}
+x.send(null);
+
+    var x = new XMLHttpRequest();
+x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=1", true);
+x.onload = function (){
+
+}
+x.send(null);
+
+}
+
+function stopleft(){
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+}
+
+
+
+function stopright(){
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+
+
+
+
+function go(){
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+function back(){
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=1", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+function stop(){
+
+    var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D2?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D4?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D0?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+        var x = new XMLHttpRequest();
+    x.open("GET", "http://blynk-cloud.com/UD-lrwUgie6uOvJesez6E5Qb70BhW954/update/D5?value=0", true);
+    x.onload = function (){
+
+    }
+    x.send(null);
+
+}
+
+
+
+function checkKey(e) {
+
+    e = e || window.event;
+    // Движение Вперед //
+    if (e.keyCode == '38') {
+        up.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      go();
+
+    }
+
+    // Движение Назад //
+    else if (e.keyCode == '40') {
+        down.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+        back()
+
+    }
+// Стоп //
+    else if (e.keyCode == '32') {
+        down.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      stop();
+
+    }
+
+    // Поворот Влево на месте быстрый (вокруг оси) //
+    else if (e.keyCode == '37') {
+        left.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      goleft_fast();
+
+    }
+
+    // Лево Вперед //
+     else if (e.keyCode == '81') {
+        left.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      goleft();
+
+    }
+
+    // Лево Назад //
+    else if (e.keyCode == '65') {
+        left.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      backleft();
+
+    }
+
+    // Поворот Вправо на месте быстрый (вокруг оси) //
+     else if (e.keyCode == '39') {
+        right.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      goright_fast();
+
+    }
+
+    // Право Вперед //
+     else if (e.keyCode == '69') {
+        right.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      goright();
+
+    }
+
+        // Право Назад //
+        else if (e.keyCode == '68') {
+        right.style.backgroundColor = "#e2e6ea";
+        setTimeout(gowhite, 100);
+
+      backright();
+
+    }
+
+}
+           
+           
+           
+
+      </script>
+      
+      
+    
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
